@@ -19,8 +19,8 @@ export default function TodoAdd({onAdd}) {
 			       type='text'
 			       onChange={handleChange} value={text}
 			       placeholder='Add Todo'
-			       onKeyDown={(e) => handleSubmit}
 			/>
-			{/*<button onClick={handleSubmit}>추가</button>*/}
-		</form>);
+			<button onClick={handleSubmit}>추가</button>
+		</form>
+	);
 }
