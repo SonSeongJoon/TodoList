@@ -14,13 +14,14 @@ export default function TodoAdd({onAdd}) {
 		setText('');
 	}
 	return (
-		<form className='flex p-4'>
-			<input className='shadow-2xl border border-gray-600 rounded-md'
+		<form className='flex p-4 bg-gray-300 w-full items-center justify-center'>
+			<input className='shadow-2xl rounded-l-md p-1'
 			       type='text'
 			       onChange={handleChange} value={text}
 			       placeholder='Add Todo'
 			/>
-			<button onClick={handleSubmit}>추가</button>
+			<button className='border rounded-r-md text-md text-white p-1 bg-gray-500' onClick={handleSubmit}>추가
+			</button>
 		</form>
 	);
 }
